@@ -25,7 +25,8 @@ h1 {
 nav {
   width: 50%;
   max-width: 300px;
-  height: 50px;
+  height: 75px;
+  padding-right: 2%;
 }
 
 nav > ul {
@@ -36,6 +37,7 @@ nav > ul {
   padding-inline-start: 0;
   margin-block: 0;
   height: 100%;
+  font-size: min(5vw, 1.5em);
 }
 
 nav > ul > li {
