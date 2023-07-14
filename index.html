@@ -4,22 +4,23 @@
      <meta charset="UTF-8" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <link rel="stylesheet" href="styles.css">
-     <script src="index.js"></script>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+     <link rel="Stylesheet" href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap">
   </head>
   <body>
     <header>
       <h1>Andrew Romanof Portfolio</h1>
       <nav>
         <ul>
-          <li><a>About Me</a></li>
-          <li><a>Projects</a></li>
-          <li><a>Contact</a></li>
+          <li><a href="#About-h2" rel="start">About Me</a></li>
+          <li><a href="#Projects-h2" rel="start">Projects</a></li>
+          <li><a href="#Contact-h2" rel="start">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="About-me">
-        <h2>About me</h2>
+        <h2 id="About-h2">About me</h2>
         <p>
           I am a highly motivated recent graduate with a Bachelor of Science degree in Computer Science 
           and a minor in Mathematics. My passion for technology and problem-solving has driven me to pursue
@@ -29,15 +30,103 @@
         </p>
       </section>
       <section id="Projects">
-        <h2>Projects</h2>
-        <button type="button" onclick="collapsible()" class="collapsible">Making a social media application for ios</button>
+        <h2 id="Projects-h2">Projects</h2>
+        <button type="button" class="collapsible">NewsFlash - A User-Friendly Social Media Platform Built with Flutter and Dart</button>
         <div class="content">
-          <p>Text</p>
+          <p>
+            NewsFlash is a user-friendly social media platform developed as a school project using Flutter and Dart. Our goal was
+            to create a simple and intuitive application that combines the power of Flutter's cross-platform capabilities with Dart's
+            efficient programming language. NewsFlash offers a seamless and visually appealing experience, focused on real-time news updates
+            and connecting users.
+          </p>
+          <p>
+            To learn more about this project, please visit <a href="https://github.com/andrewromanof/NewsFlash-App-main" target="_blank">the github respository!</a>
+          </p>
+        </div>
+        <button type="button" class="collapsible">Project 2</button>
+        <div class="content">
+          <p>
+            NewsFlash is a user-friendly social media platform developed as a school project using Flutter and Dart. Our goal was
+            to create a simple and intuitive application that combines the power of Flutter's cross-platform capabilities with Dart's
+            efficient programming language. NewsFlash offers a seamless and visually appealing experience, focused on real-time news updates
+            and connecting users.
+          </p>
+          <p>
+            To learn more about this project, please visit <a href="https://github.com/andrewromanof/NewsFlash-App-main" target="_blank">the github respository!</a>
+          </p>
+        </div>
+        <button type="button" class="collapsible">Project 3</button>
+        <div class="content">
+          <p>
+            NewsFlash is a user-friendly social media platform developed as a school project using Flutter and Dart. Our goal was
+            to create a simple and intuitive application that combines the power of Flutter's cross-platform capabilities with Dart's
+            efficient programming language. NewsFlash offers a seamless and visually appealing experience, focused on real-time news updates
+            and connecting users.
+          </p>
+          <p>
+            To learn more about this project, please visit <a href="https://github.com/andrewromanof/NewsFlash-App-main" target="_blank">the github respository!</a>
+          </p>
+        </div>
+        <button type="button" class="collapsible">Project 4</button>
+        <div class="content">
+          <p>
+            NewsFlash is a user-friendly social media platform developed as a school project using Flutter and Dart. Our goal was
+            to create a simple and intuitive application that combines the power of Flutter's cross-platform capabilities with Dart's
+            efficient programming language. NewsFlash offers a seamless and visually appealing experience, focused on real-time news updates
+            and connecting users.
+          </p>
+          <p>
+            To learn more about this project, please visit <a href="https://github.com/andrewromanof/NewsFlash-App-main" target="_blank">the github respository!</a>
+          </p>
+        </div>
+        <button type="button" class="collapsible">Project 5</button>
+        <div class="content">
+          <p>
+            NewsFlash is a user-friendly social media platform developed as a school project using Flutter and Dart. Our goal was
+            to create a simple and intuitive application that combines the power of Flutter's cross-platform capabilities with Dart's
+            efficient programming language. NewsFlash offers a seamless and visually appealing experience, focused on real-time news updates
+            and connecting users.
+          </p>
+          <p>
+            To learn more about this project, please visit <a href="https://github.com/andrewromanof/NewsFlash-App-main" target="_blank">the github respository!</a>
+          </p>
+        </div>
+        <button type="button" class="collapsible">Project 6</button>
+        <div class="content">
+          <p>
+            NewsFlash is a user-friendly social media platform developed as a school project using Flutter and Dart. Our goal was
+            to create a simple and intuitive application that combines the power of Flutter's cross-platform capabilities with Dart's
+            efficient programming language. NewsFlash offers a seamless and visually appealing experience, focused on real-time news updates
+            and connecting users.
+          </p>
+          <p>
+            To learn more about this project, please visit <a href="https://github.com/andrewromanof/NewsFlash-App-main" target="_blank">the github respository!</a>
+          </p>
         </div>
       </section>
       <section id="Contact">
-        <h2>Contact</h2>
+        <h2 id="Contact-h2">Contact</h2>
+        <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Toronto, Canada</p>
+        <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Mobile(Text/Call): 647-569-2491</p>
+        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: andrewromanof@gmail.com</p>
+        <p><i class="fab fa-linkedin-in"></i> LinkedIn: <a href="linkedin.com/in/andrew-romanof-4a98b21a9" target="_blank"> Click here</a></p>
       </section>
     </main>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+      </script>
   </body>
 </html>
