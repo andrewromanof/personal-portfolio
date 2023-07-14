@@ -1,10 +1,11 @@
 main {
-  padding-top: 1%;
+  padding-top: 5%;
 }
 
 html, body {
   width: 100%;
   margin: 0;
+  scroll-padding-top: 8%;
 }
 
 body {
@@ -21,6 +22,7 @@ header {
   align-items: center;
   position: fixed;
   top: 0;
+  z-index: 200;
 }
 
 h1 {
@@ -41,7 +43,7 @@ h2 {
 nav {
   width: 50%;
   max-width: 300px;
-  padding-right: 6%;
+  padding-right: 3%;
 }
 
 nav > ul {
@@ -74,8 +76,8 @@ li > a {
 }
 
 p {
-  margin: 0 5%;
-  font-size: 20;
+  margin: 0 8%;
+  font-size: 150%;
   font-family: Verdana;
 }
 
@@ -86,9 +88,8 @@ p {
   padding: 18px;
   width: 100%;
   border: none;
-  text-align: left;
   outline: none;
-  font-size: 20px;
+  font-size: 150%;
   text-align: center;
 }
 
@@ -115,4 +116,23 @@ p {
   overflow: hidden;
   max-height: 0;
   background-color: rgb(20, 30, 40);
+}
+
+#Projects p, #Contact p {
+  font-size: 150%;
+  font-family: Verdana;
+  display: block;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+a {
+  color: #0096FF;
+}
+
+a:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
 }
