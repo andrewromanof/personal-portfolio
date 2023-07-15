@@ -1,0 +1,197 @@
+main {
+  padding-top: 5%;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  scroll-padding-top: 8%;
+}
+
+body {
+  color: linen;
+  background-color: rgb(20, 30, 40);
+}
+
+header {
+  width: 100%;
+  height: 8%;
+  background-color: #1b1b32;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+}
+
+h1 {
+  color: #f1be32;
+  font-size: min(5vw, 2.0em);
+  text-align: center;
+  padding-left: 1.5%;
+}
+
+h2 {
+  color: orangered;
+  font-size: min(5vw, 1.8em);
+  text-align: center;
+  padding-left: 1.5%;
+  font-family: Georgia;
+}
+
+h4 {
+  display: flex;
+  justify-content: space-between;
+  font-size: min(5vw, 1.8em);
+  font-family: sans-serif;
+  padding-bottom: 1%;
+}
+
+#h4left {
+  float: left;
+  margin-left: 20%;
+}
+
+#h4right {
+  float: right;
+  margin-right: 20%; 
+}
+
+nav {
+  width: 50%;
+  max-width: 300px;
+  padding-right: 3%;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+  font-size: min(5vw, 1.5em);
+}
+
+nav > ul > li {
+  color: #dfdfe2;
+  margin: 0 1%;
+  padding: 1%;
+  display: block;
+}
+
+nav > ul > li:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0 8%;
+  font-size: 150%;
+  font-family: Verdana;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 150%;
+  text-align: center;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\27A4';
+  color: white;
+  font-weight: bold;
+  float: left;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+
+.content {
+  padding: 0 18px;
+  transition: max-height 0.2s ease-out;
+  overflow: hidden;
+  max-height: 0;
+  background-color: rgb(20, 30, 40);
+}
+
+#Projects p, #Contact p {
+  font-size: 150%;
+  font-family: Verdana;
+  display: block;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+a {
+  color: #0096FF;
+}
+
+a:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
+}
+
+img {
+  width: 10%;
+  padding-top: 1%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#line1 {
+  margin-top: 5%;
+}
+
+#line1, #line2, #line3 {
+  font-size: 150%;
+  font-family: Verdana;
+}
+
+#lileft1, #lileft2, #lileft3 {
+  float: left;
+  margin-left: 15%;
+}
+
+#lileft4, #lileft5, #lileft6 {
+  float: left;
+  margin-left: 10%;
+}
+
+#liright1, #liright2, #liright3 {
+  float: right;
+  margin-right: 15%;
+}
+
+#liright4, #liright5, #liright6 {
+  float: right;
+  margin-right: 10%;
+}
+
+#About-me p {
+  text-align: center;
+}
