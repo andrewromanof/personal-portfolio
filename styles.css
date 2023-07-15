@@ -156,7 +156,7 @@ a:hover {
 }
 
 img {
-  width: 10%;
+  width: max(10%, 100px);
   padding-top: 1%;
   display: block;
   margin-left: auto;
